@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordy Rodriguez</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Latin Modern Roman', serif;
+            background-color: #F5F5F4;
+            color: #545454;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #F5F5F4;
+            color: #545454;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1200000;
+            border-bottom: 1px solid #a9a9a9;
+        } 
+
+        .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 1.5rem
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #545454;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 6rem auto 2rem;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 300px;
+            margin: 2rem 0;
+            display: block;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="name">Jordy Rodriguez</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">about me</a></li>
+                    <li><a href="brain-dump.html">brain dump</a></li>
+                    <li><a href="miscellaneous.html">pics</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>about me</h1>
+            <img src="me.jpeg" alt="Jordy Rodriguez" class="profile-image">
+            <p>I am Jordy Rodriguez.</p>
+        </section>
+    </main>
+</body>
+</html>
