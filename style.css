@@ -78,6 +78,7 @@ nav a[aria-current="page"] {
         background-color: #F5F5F4;
         border-bottom: 1px solid #a9a9a9;
         display: none;
+        z-index: 1000;
     }
 
     nav.active {
@@ -304,4 +305,24 @@ p {
 }
 .menu-overlay.active {
     display: block;
-} 
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.menu-overlay.active {
+    display: block;
+}
+
+iframe {
+    z-index: 1;
+    position: relative;
+}
