@@ -40,7 +40,7 @@
         }
 
         .name {
-            font-size: 1.5rem
+            font-size: 1.5rem;
         }
 
         .menu-toggle {
@@ -103,7 +103,6 @@
             nav li:hover {
                 background-color: rgba(0, 0, 0, 0.05);
             }
-            
         }
 
         main {
@@ -128,6 +127,100 @@
 
         p {
             margin-bottom: 1rem;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* Creates a square aspect ratio */
+            overflow: hidden;
+            margin-top: 2rem; /* Add space for description */
+        }
+
+        .carousel-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .carousel-item img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-description {
+            width: 100%;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #545454;
+            font-style: italic;
+            margin-bottom: 1.25rem;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        .carousel-button {
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #545454;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-button:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #a9a9a9;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #545454;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -169,7 +262,7 @@
                 border-bottom: 1px solid #F5F5F4;
             }
             nav {
-                border-bottom: 1px solid #F5F5F4;
+                border-bottom: 1px solid #545454;
             }
         }
     </style>
@@ -191,18 +284,19 @@
 
     <main>
         <section id="pics">
+            <h1>pics</h1>
             <div class="carousel-container">
                 <div class="carousel-description"></div>
                 <div class="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item">
-                            <img src="pics/BCB808C6-F143-4B95-A396-7D879543FDF1_1_105_c.jpeg" alt="village 1">
+                            <img src="pics/BCB808C6-F143-4B95-A396-7D879543FDF1_1_105_c.jpeg" alt="Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="pics/43080711-6395-4EE9-8D03-67A3CB4CB912.jpeg" alt="village 2">
+                            <img src="pics/43080711-6395-4EE9-8D03-67A3CB4CB912.jpeg" alt="Image 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="pics/111841EE-C95B-4FD6-95BA-C7B6B7184FD3_1_105_c.jpeg" alt="eclipse">
+                            <img src="pics/111841EE-C95B-4FD6-95BA-C7B6B7184FD3_1_105_c.jpeg" alt="Image 3">
                         </div>
                     </div>
                     <div class="carousel-controls">
@@ -285,4 +379,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
