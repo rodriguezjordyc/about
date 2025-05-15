@@ -9,13 +9,13 @@
 body {
     font-family: 'Latin Modern Roman', serif;
     background-color: #F5F5F4;
-    color: #545454;
+    color: #1a1a1a;
     line-height: 1.6;
 }
 
 header {
     background-color: #F5F5F4;
-    color: #545454;
+    color: #1a1a1a;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -41,7 +41,7 @@ header {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #545454;
+    color: #1a1a1a;
 }
 
 nav ul {
@@ -51,7 +51,7 @@ nav ul {
 }
 
 nav a {
-    color: #545454;
+    color: #1a1a1a;
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
@@ -101,7 +101,7 @@ nav a[aria-current="page"] {
 
 @media (max-width: 768px) and (prefers-color-scheme: dark) {
     nav {
-        background-color: #545454;
+        background-color: #1a1a1a;
         border-bottom: 1px solid #F5F5F4;
         box-shadow: 0 1px 0 0 #F5F5F4;
     }
@@ -193,7 +193,7 @@ p {
     width: 100%;
     text-align: center;
     font-size: 1.1rem;
-    color: #545454;
+    color: #1a1a1a;
     font-style: italic;
     margin-bottom: 1.25rem;
 }
@@ -214,7 +214,7 @@ p {
     padding: 1rem;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #545454;
+    color: #1a1a1a;
     transition: background-color 0.3s ease;
 }
 
@@ -239,7 +239,7 @@ p {
 }
 
 .indicator.active {
-    background: #545454;
+    background: #1a1a1a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -247,11 +247,11 @@ p {
         color: #F5F5F4;
     }
     body {
-        background-color: #545454;
+        background-color: #1a1a1a;
         color: #F5F5F4;
     }
     header, nav, .carousel-container, main, section {
-        background-color: #545454;
+        background-color: #1a1a1a;
         color: #F5F5F4;
     }
     nav a {
@@ -284,7 +284,7 @@ p {
         border-bottom: 1px solid #F5F5F4;
     }
     nav {
-        border-bottom: 1px solid #545454;
+        border-bottom: 1px solid #1a1a1a;
     }
     nav a.active,
     nav a[aria-current="page"] {
