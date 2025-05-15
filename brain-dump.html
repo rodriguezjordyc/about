@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jordy rodriguez</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman&display=swap">
-    <style>
+   <style>
         * {
             margin: 0;
             padding: 0;
@@ -66,6 +66,11 @@
             opacity: 0.6;
         }
 
+        nav a.active,
+        nav a[aria-current="page"] {
+            border-bottom: 1px solid #F5F5F4 !important;
+        }
+
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
@@ -98,6 +103,7 @@
             nav li:hover {
                 background-color: rgba(0, 0, 0, 0.05);
             }
+            
         }
 
         main {
@@ -122,6 +128,49 @@
 
         p {
             margin-bottom: 1rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #545454;
+                color: #F5F5F4;
+            }
+            header, nav, .carousel-container, main, section {
+                background-color: #545454;
+                color: #F5F5F4;
+            }
+            nav a {
+                color: #F5F5F4;
+                text-decoration: none;
+            }
+            nav a:hover {
+                opacity: 0.6;
+                color: #F5F5F4;
+                text-decoration: none;
+            }
+            .carousel-button {
+                color: #F5F5F4;
+                background: rgba(84, 84, 84, 0.7);
+            }
+            .carousel-button:hover {
+                background: rgba(84, 84, 84, 0.9);
+            }
+            .carousel-indicators .indicator {
+                background: #F5F5F4;
+            }
+            .carousel-indicators .indicator.active {
+                background: #F5F5F4;
+                opacity: 0.7;
+            }
+            .carousel-description {
+                color: #F5F5F4;
+            }
+            header {
+                border-bottom: 1px solid #F5F5F4;
+            }
+            nav {
+                border-bottom: 1px solid #F5F5F4;
+            }
         }
     </style>
 </head>
