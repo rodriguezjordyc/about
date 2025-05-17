@@ -1,1 +1,1 @@
-# jordy rodriguez personal site
+# a bit about me
