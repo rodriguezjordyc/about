@@ -62,3 +62,12 @@ navLinks.forEach(link => {
         }, 100); // 100ms delay lets the navigation happen
     });
 });
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Only close the menu after navigation for normal links
+        nav.classList.remove('active');
+        overlay.classList.remove('active');
+        // Do NOT preventDefault unless you want to handle navigation manually
+    });
+});
