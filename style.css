@@ -10,7 +10,7 @@ body {
     font-family: 'Latin Modern Roman', serif;
     background-color: #F5F5F4;
     color: #32302d;
-    line-height: 3;
+    line-height: 1.5;
 }
 
 header {
@@ -138,6 +138,7 @@ h2 {
 
 p {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .profile-image {
