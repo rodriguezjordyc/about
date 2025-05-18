@@ -1,5 +1,3 @@
-/* Shared site styles for jordy rodriguez */
-
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +7,13 @@
 body {
     font-family: 'Latin Modern Roman', serif;
     background-color: #F5F5F4;
-    color: #191919;
-    line-height: 2;
+    color: #545454;
+    line-height: 1.6;
 }
 
 header {
     background-color: #F5F5F4;
-    color: #191919;
+    color: #545454;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -41,7 +39,7 @@ header {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #191919;
+    color: #545454;
 }
 
 nav ul {
@@ -51,7 +49,7 @@ nav ul {
 }
 
 nav a {
-    color: #191919;
+    color: #545454;
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
@@ -78,7 +76,6 @@ nav a[aria-current="page"] {
         background-color: #F5F5F4;
         border-bottom: 1px solid #a9a9a9;
         display: none;
-        z-index: 1000;
     }
 
     nav.active {
@@ -102,7 +99,7 @@ nav a[aria-current="page"] {
 
 @media (max-width: 768px) and (prefers-color-scheme: dark) {
     nav {
-        background-color: #191919;
+        background-color: #545454;
         border-bottom: 1px solid #F5F5F4;
         box-shadow: 0 1px 0 0 #F5F5F4;
     }
@@ -194,7 +191,7 @@ p {
     width: 100%;
     text-align: center;
     font-size: 1.1rem;
-    color: #191919;
+    color: #545454;
     font-style: italic;
     margin-bottom: 1.25rem;
 }
@@ -215,7 +212,7 @@ p {
     padding: 1rem;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #191919;
+    color: #545454;
     transition: background-color 0.3s ease;
 }
 
@@ -240,7 +237,7 @@ p {
 }
 
 .indicator.active {
-    background: #191919;
+    background: #545454;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -248,11 +245,11 @@ p {
         color: #F5F5F4;
     }
     body {
-        background-color: #191919;
+        background-color: #545454;
         color: #F5F5F4;
     }
     header, nav, .carousel-container, main, section {
-        background-color: #191919;
+        background-color: #545454;
         color: #F5F5F4;
     }
     nav a {
@@ -285,7 +282,7 @@ p {
         border-bottom: 1px solid #F5F5F4;
     }
     nav {
-        border-bottom: 1px solid #191919;
+        border-bottom: 1px solid #545454;
     }
     nav a.active,
     nav a[aria-current="page"] {
@@ -307,22 +304,26 @@ p {
     display: block;
 }
 
-.menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 999;
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #a9a9a9;
 }
 
-.menu-overlay.active {
-    display: block;
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-iframe {
-    z-index: 1;
-    position: relative;
+.contact-link {
+    color: #545454;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
 }
+
+.contact-link:hover {
+    opacity: 0.6;
+} 
