@@ -1,5 +1,4 @@
-/* Shared site styles for jordy rodriguez */
-
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +12,34 @@ body {
     line-height: 1.6;
 }
 
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Layout */
+main {
+    max-width: 900px;
+    margin: 6rem auto 2rem;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* Header & Navigation */
 header {
     background-color: #F5F5F4;
     color: #191919;
@@ -65,89 +92,34 @@ nav a[aria-current="page"] {
     border-bottom: 1px solid #F5F5F4 !important;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #F5F5F4;
-        border-bottom: 1px solid #a9a9a9;
-        display: none;
-        z-index: 1200000;
-    }
-
-    nav.active {
-        display: block;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 1rem 0;
-        gap: 0;
-    }
-
-    nav li {
-        padding: 0.5rem 2rem;
-    }
-
-    nav li:hover {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-
-    nav a {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #F5F5F4;
+    border-top: 1px solid #a9a9a9;
+    margin-top: 2rem;
 }
 
-@media (max-width: 768px) and (prefers-color-scheme: dark) {
-    nav {
-        background-color: #191919;
-        border-bottom: 1px solid #F5F5F4;
-        box-shadow: 0 1px 0 0 #F5F5F4;
-    }
-    nav li:hover {
-        background-color: rgba(255,255,255,0.05);
-    }
-    nav a {
-        color: #F5F5F4;
-    }
-    .menu-toggle {
-        color: #F5F5F4;
-    }
-}
-
-main {
+.contact-links {
     max-width: 900px;
-    margin: 6rem auto 2rem;
-    padding: 0 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-section {
-    margin-bottom: 3rem;
+.contact-link {
+    color: #191919;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+.contact-link:hover {
+    opacity: 0.6;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
+/* Images */
 .profile-image {
     width: 100%;
     max-width: 200px;
@@ -156,6 +128,7 @@ p {
     border-radius: 4px;
 }
 
+/* Carousel */
 .carousel-container {
     position: relative;
     width: 100%;
@@ -166,9 +139,9 @@ p {
 .carousel {
     position: relative;
     width: 100%;
-    padding-bottom: 100%; /* Creates a square aspect ratio */
+    padding-bottom: 100%;
     overflow: hidden;
-    margin-top: 2rem; /* Add space for description */
+    margin-top: 2rem;
 }
 
 .carousel-inner {
@@ -250,62 +223,7 @@ p {
     background: #191919;
 }
 
-@media (prefers-color-scheme: dark) {
-    .menu-toggle {
-        color: #F5F5F4;
-    }
-    body {
-        background-color: #191919;
-        color: #F5F5F4;
-    }
-    header, nav, .carousel-container, main, section, footer {
-        background-color: #191919;
-        color: #F5F5F4;
-    }
-    nav a {
-        color: #F5F5F4;
-        text-decoration: none;
-    }
-    nav a:hover {
-        opacity: 0.6;
-        color: #F5F5F4;
-        text-decoration: none;
-    }
-    .carousel-button {
-        color: #F5F5F4;
-        background: rgba(84, 84, 84, 0.7);
-    }
-    .carousel-button:hover {
-        background: rgba(84, 84, 84, 0.9);
-    }
-    .carousel-indicators .indicator {
-        background: #F5F5F4;
-    }
-    .carousel-indicators .indicator.active {
-        background: #F5F5F4;
-        opacity: 0.7;
-    }
-    .carousel-description {
-        color: #F5F5F4;
-    }
-    header {
-        border-bottom: 1px solid #F5F5F4;
-    }
-    nav {
-        border-bottom: 1px solid #191919;
-    }
-    nav a.active,
-    nav a[aria-current="page"] {
-        border-bottom: 1px solid #F5F5F4 !important;
-    }
-    footer {
-        border-top: 1px solid #F5F5F4;
-    }
-    .contact-link {
-        color: #F5F5F4;
-    }
-}
-
+/* Mobile Menu Overlay */
 .menu-overlay {
     display: none;
     position: fixed;
@@ -316,30 +234,92 @@ p {
     background: rgba(0,0,0,0.2);
     z-index: 2147483647;
 }
+
 .menu-overlay.active {
     display: block;
 }
 
-footer {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-    border-top: 1px solid #a9a9a9;
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #F5F5F4;
+        border-bottom: 1px solid #a9a9a9;
+        display: none;
+        z-index: 1200000;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 0;
+    }
+
+    nav li {
+        padding: 0.5rem 2rem;
+    }
+
+    nav li:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #191919;
+        color: #F5F5F4;
+    }
 
-.contact-link {
-    color: #191919;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-}
+    header, nav, footer {
+        background-color: #191919;
+        border-color: #F5F5F4;
+    }
 
-.contact-link:hover {
-    opacity: 0.6;
+    .menu-toggle, nav a, .contact-link {
+        color: #F5F5F4;
+    }
+
+    .carousel-button {
+        color: #F5F5F4;
+        background: rgba(84, 84, 84, 0.7);
+    }
+
+    .carousel-button:hover {
+        background: rgba(84, 84, 84, 0.9);
+    }
+
+    .carousel-indicators .indicator {
+        background: #F5F5F4;
+    }
+
+    .carousel-indicators .indicator.active {
+        background: #F5F5F4;
+        opacity: 0.7;
+    }
+
+    .carousel-description {
+        color: #F5F5F4;
+    }
+
+    nav li:hover {
+        background-color: rgba(255,255,255,0.05);
+    }
 } 
