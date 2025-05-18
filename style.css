@@ -10,7 +10,7 @@ body {
     font-family: 'Latin Modern Roman', serif;
     background-color: #F5F5F4;
     color: #32302d;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 header {
@@ -138,15 +138,14 @@ h2 {
 
 p {
     margin-bottom: .5rem;
-    font-size: 1rem;
 }
 
 .profile-image {
     width: 100%;
-    max-width: 150px;
-    margin: 1rem 0;
+    max-width: 200px;
+    margin: 2rem 0;
     display: block;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .carousel-container {
@@ -290,6 +289,12 @@ p {
     nav a.active,
     nav a[aria-current="page"] {
         border-bottom: 1px solid #F5F5F4 !important;
+    }
+    footer {
+        border-top: 1px solid #F5F5F4;
+    }
+    .contact-link {
+        color: #F5F5F4;
     }
 }
 
