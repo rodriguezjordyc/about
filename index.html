@@ -60,10 +60,13 @@
         // Close menu when a link is clicked
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
-                nav.classList.remove('active');
-                overlay.classList.remove('active');
+                setTimeout(() => {
+                    nav.classList.remove('active');
+                    overlay.classList.remove('active');
+                }, 100); // 100ms delay lets the navigation happen
             });
         });
     </script>
+    <script src="menu.js"></script>
 </body>
 </html>
