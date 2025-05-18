@@ -142,8 +142,8 @@ p {
 
 .profile-image {
     width: 100%;
-    max-width: 200px;
-    margin: 2rem 0;
+    max-width: 100px;
+    margin: 1rem 0;
     display: block;
     border-radius: 4px;
 }
