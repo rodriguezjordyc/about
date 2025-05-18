@@ -251,7 +251,7 @@ p {
         background-color: #32302d;
         color: #F5F5F4;
     }
-    header, nav, .carousel-container, main, section {
+    header, footer, nav, .carousel-container, main, section {
         background-color: #32302d;
         color: #F5F5F4;
     }
