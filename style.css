@@ -313,14 +313,6 @@ p {
     display: block;
 }
 
-footer {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-    border-top: 1px solid #a9a9a9;
-}
-
 .contact-links {
     display: flex;
     justify-content: center;
@@ -336,3 +328,13 @@ footer {
 .contact-link:hover {
     opacity: 0.6;
 } 
+footer {
+    background-color: #F5F5F4;
+    color: #32302d;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1200000;
+    border-top: 1px solid #a9a9a9;
+}
