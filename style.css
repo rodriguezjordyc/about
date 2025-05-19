@@ -28,6 +28,11 @@ p {
     margin-bottom: 1rem;
 }
 
+p a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 /* Layout */
 main {
     max-width: 900px;
