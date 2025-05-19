@@ -78,8 +78,8 @@ nav ul {
 }
 
 nav a {
-    color: #191919;
-    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
     transition: opacity 0.3s ease;
 }
 
@@ -336,4 +336,4 @@ footer {
     nav li {
         border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-} 
+}
