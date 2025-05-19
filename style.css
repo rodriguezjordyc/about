@@ -64,6 +64,11 @@ header {
     font-size: 1.5rem;
 }
 
+.name a {
+    color: #191919;
+    text-decoration: none;
+}
+
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -382,7 +387,11 @@ footer {
         border-color: #ffffff;
     }
 
-    .menu-toggle, nav a, .contact-link, .name {
+    .menu-toggle, .contact-link, .name a {
+        color: #ffffff;
+    }
+
+    nav a {
         color: #ffffff;
         text-decoration: none;
     }
