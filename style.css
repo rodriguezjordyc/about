@@ -84,7 +84,6 @@ nav ul {
 
 nav a {
     color: inherit;
-    text-decoration: underline;
     transition: opacity 0.3s ease;
 }
 
