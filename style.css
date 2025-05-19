@@ -289,6 +289,11 @@ footer {
         position: relative;
         z-index: 1002;
     }
+
+    /* Hide location/date on mobile */
+    .resume-entry .location-date {
+        display: none !important;
+    }
 }
 
 /* Resume Styles */
