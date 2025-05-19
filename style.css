@@ -85,6 +85,7 @@ nav ul {
 nav a {
     color: inherit;
     transition: opacity 0.3s ease;
+    text-decoration: none; /* Remove underline */
 }
 
 nav a:hover {
