@@ -354,6 +354,17 @@ footer {
     flex-grow: 1; /* Allow text details to take up remaining space */
 }
 
+.resume-entry .location-date {
+    display: none;
+    font-size: 0.9em; /* Slightly smaller font for location/date */
+    color: #545454; /* A slightly lighter color */
+    margin-left: 0.5em; /* Space after the job title */
+}
+
+.resume-entry:hover .location-date {
+    display: inline;
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     body {
@@ -398,5 +409,14 @@ footer {
 
     nav li {
         border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Dark mode adjustments for resume specific styles */
+    .resume-section {
+        border-bottom-color: #F5F5F4;
+    }
+
+    .resume-entry .location-date {
+        color: #a9a9a9; /* Lighter color for dark mode */
     }
 } 
