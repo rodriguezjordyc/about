@@ -384,6 +384,7 @@ footer {
 
     .menu-toggle, nav a, .contact-link, .name {
         color: #ffffff;
+        text-decoration: none;
     }
 
     .carousel-button {
@@ -423,5 +424,12 @@ footer {
 
     .resume-entry .location-date {
         color: #a9a9a9; /* Lighter color for dark mode */
+    }
+
+    /* Corrected nav a hover color in dark mode */
+    nav a:hover {
+        color: #ffffff; /* Ensure hover color is consistent */
+        opacity: 0.6;
+        text-decoration: none;
     }
 } 
