@@ -337,6 +337,23 @@ footer {
     margin-bottom: 0;
 }
 
+.resume-entry-with-logo {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem; /* Space between logo and text */
+}
+
+.company-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.resume-entry-details {
+    flex-grow: 1; /* Allow text details to take up remaining space */
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     body {
