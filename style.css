@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
 body {
     font-family: 'Latin Modern Roman', serif;
     background-color: #ffffff;
@@ -31,11 +26,6 @@ h2 {
 p {
     font-size: 1rem;
     margin-bottom: 1rem;
-}
-
-p a {
-    color: inherit;
-    text-decoration: underline;
 }
 
 /* Layout */
@@ -88,9 +78,9 @@ nav ul {
 }
 
 nav a {
-    color: inherit;
+    color: #191919;
+    text-decoration: none;
     transition: opacity 0.3s ease;
-    text-decoration: none; /* Remove underline */
 }
 
 nav a:hover {
@@ -108,13 +98,12 @@ footer {
     background-color: #ffffff;
     border-top: 1px solid #a9a9a9;
     margin-top: 2rem;
-    padding: 1rem 0; /* Match header height */
 }
 
 .contact-links {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0; /* Remove extra padding */
+    padding: 2rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -134,7 +123,7 @@ footer {
 .profile-image {
     width: 100%;
     max-width: 200px;
-    margin: 2rem auto;      /* This centers the image horizontally */
+    margin: 2rem 0;
     display: block;
     border-radius: 4px;
 }
@@ -240,8 +229,8 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0,0,0,0.2);
     z-index: 1000;
 }
@@ -302,6 +291,52 @@ footer {
     }
 }
 
+/* Resume Styles */
+.resume-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #a9a9a9; /* Matching header/footer border */
+}
+
+.resume-section:last-child {
+    border-bottom: none;
+}
+
+.resume-entry {
+    margin-bottom: 1.5rem;
+}
+
+.resume-entry h3 {
+    margin-bottom: 0.3rem;
+}
+
+.resume-entry p {
+    margin-bottom: 0.5rem;
+}
+
+.resume-entry ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    list-style: disc;
+}
+
+.resume-entry li {
+    margin-bottom: 0.3rem;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.resume-header p {
+    margin-bottom: 0;
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     body {
@@ -347,4 +382,4 @@ footer {
     nav li {
         border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-}
+} 
