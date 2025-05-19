@@ -12,7 +12,7 @@ html, body {
 
 body {
     font-family: 'Latin Modern Roman', serif;
-    background-color: #F5F5F4;
+    background-color: #ffffff;
     color: #191919;
     line-height: 1.6;
 }
@@ -51,7 +51,7 @@ section {
 
 /* Header & Navigation */
 header {
-    background-color: #F5F5F4;
+    background-color: #ffffff;
     color: #191919;
     padding: 1rem 0;
     position: fixed;
@@ -99,13 +99,13 @@ nav a:hover {
 
 nav a.active,
 nav a[aria-current="page"] {
-    border-bottom: 1px solid #F5F5F4 !important;
+    border-bottom: 1px solid #ffffff !important;
 }
 
 /* Footer */
 footer {
     width: 100%;
-    background-color: #F5F5F4;
+    background-color: #ffffff;
     border-top: 1px solid #a9a9a9;
     margin-top: 2rem;
 }
@@ -262,7 +262,7 @@ footer {
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: #F5F5F4;
+        background-color: #ffffff;
         display: none;
         z-index: 1001;
         padding-top: 4rem;
@@ -305,20 +305,20 @@ footer {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #191919;
-        color: #F5F5F4;
+        color: #ffffff;
     }
 
     header, nav, footer {
         background-color: #191919;
-        border-color: #F5F5F4;
+        border-color: #ffffff;
     }
 
     .menu-toggle, nav a, .contact-link, .name {
-        color: #F5F5F4;
+        color: #ffffff;
     }
 
     .carousel-button {
-        color: #F5F5F4;
+        color: #ffffff;
         background: rgba(84, 84, 84, 0.7);
     }
 
@@ -327,16 +327,16 @@ footer {
     }
 
     .carousel-indicators .indicator {
-        background: #F5F5F4;
+        background: #ffffff;
     }
 
     .carousel-indicators .indicator.active {
-        background: #F5F5F4;
+        background: #ffffff;
         opacity: 0.7;
     }
 
     .carousel-description {
-        color: #F5F5F4;
+        color: #ffffff;
     }
 
     nav li:hover {
