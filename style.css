@@ -136,6 +136,7 @@ footer {
     margin: 2rem 0;
     display: block;
     border-radius: 4px;
+    position: center;
 }
 
 /* Carousel */
