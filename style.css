@@ -302,6 +302,12 @@ footer {
     .pdf-viewer-mobile {
         display: block; /* Show mobile link on mobile */
     }
+
+    /* Style for PDF link in mobile view */
+    .pdf-viewer-mobile a {
+        color: inherit; /* Match parent text color (adapts to dark mode) */
+        text-decoration: underline;
+    }
 }
 
 /* Resume Styles */
