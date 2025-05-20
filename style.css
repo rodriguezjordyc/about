@@ -271,10 +271,12 @@ footer {
         flex-direction: column;
         padding: 1rem 0;
         gap: 0;
+        text-align: center;         /* Center text in menu */
+        justify-content: center;    /* Center items vertically */
     }
 
     nav li {
-        padding: 1rem 2rem;
+        padding: 1rem 0.5rem;       /* Less side padding */
         border-bottom: 1px solid rgba(0,0,0,0.1);
     }
 
@@ -293,6 +295,7 @@ footer {
         font-size: 1.2rem;
         position: relative;
         z-index: 1002;
+        text-align: center;         /* Center link text */
     }
 
     /* Hide location/date on mobile */
@@ -441,4 +444,4 @@ footer {
         opacity: 0.6;
         text-decoration: none;
     }
-} 
+}
