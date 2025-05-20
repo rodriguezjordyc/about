@@ -294,6 +294,14 @@ footer {
     .resume-entry .location-date {
         display: none !important;
     }
+
+    .pdf-viewer-web {
+        display: none; /* Hide web viewer on mobile */
+    }
+
+    .pdf-viewer-mobile {
+        display: block; /* Show mobile link on mobile */
+    }
 }
 
 /* Resume Styles */
@@ -368,6 +376,15 @@ footer {
 
 .resume-entry:hover .location-date {
     display: inline;
+}
+
+/* PDF Viewer Styles */
+.pdf-viewer-web {
+    display: block; /* Show by default */
+}
+
+.pdf-viewer-mobile {
+    display: none; /* Hide by default */
 }
 
 /* Dark Mode */
