@@ -380,11 +380,24 @@ footer {
 
 /* PDF Viewer Styles */
 .pdf-viewer-web {
-    display: block; /* Show by default */
+    display: block; /* Show by default (web view) */
 }
 
 .pdf-viewer-mobile {
-    display: none; /* Hide by default */
+    display: none; /* Hide by default (web view) */
+}
+
+/* Mobile Styles - Adjust PDF Viewer Display */
+@media (max-width: 768px) {
+    /* ... existing mobile styles ... */
+
+    .pdf-viewer-web {
+        display: none; /* Hide web viewer on mobile */
+    }
+
+    .pdf-viewer-mobile {
+        display: block; /* Show mobile link on mobile */
+    }
 }
 
 /* Dark Mode */
