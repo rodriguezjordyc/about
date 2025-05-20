@@ -80,12 +80,11 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
-    text-decoration: none;
 }
 
 nav a {
-    color: #191919;
-    text-decoration: none;
+    color: #191919; /* Default link color */
+    text-decoration: none; /* Remove underline by default */
     transition: opacity 0.3s ease;
 }
 
@@ -274,16 +273,12 @@ footer {
         gap: 0;
     }
 
+    /* Style nav links specifically in mobile view */
     nav a {
-        display: block;
-        width: 100%;
         padding: 1.5rem 2rem;
         font-size: 1.2rem;
-        position: relative;
-        z-index: 1002;
-        text-align: left;
         border-bottom: 1px solid rgba(0,0,0,0.1);
-        text-decoration: none;
+        text-align: left;
     }
 
     nav a:last-child {
@@ -391,10 +386,17 @@ footer {
         color: #ffffff;
     }
 
+    /* Ensure nav links are white and not underlined in dark mode - general style */
     nav a {
-        color: #ffffff;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        color: #ffffff; /* Ensure nav link color in dark mode */
+        text-decoration: none; /* Ensure no underline in dark mode */
+    }
+
+    /* Dark mode mobile menu link border */
+    @media (max-width: 768px) {
+        nav a {
+            border-bottom-color: rgba(255, 255, 255, 0.2);
+        }
     }
 
     .carousel-button {
@@ -436,10 +438,10 @@ footer {
         color: #a9a9a9; /* Lighter color for dark mode */
     }
 
-    /* Corrected nav a hover color in dark mode */
+    /* Corrected nav a hover color in dark mode (already done, keeping for clarity) */
     nav a:hover {
         color: #ffffff; /* Ensure hover color is consistent */
         opacity: 0.6;
         text-decoration: none;
     }
-}
+} 
