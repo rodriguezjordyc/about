@@ -273,28 +273,25 @@ footer {
         gap: 0;
     }
 
-    nav li {
-        padding: 1.5rem 2rem;
-        border-bottom: 1px solid rgba(0,0,0,0.1);
-        text-align: center;
-    }
-
-    nav li:last-child {
-        border-bottom: none;
-    }
-
-    nav li:hover {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-
     nav a {
         display: block;
         width: 100%;
-        height: 100%;
+        padding: 1.5rem 2rem;
         font-size: 1.2rem;
         position: relative;
         z-index: 1002;
         text-align: center;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        text-decoration: none;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    nav a:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        opacity: 1;
     }
 
     /* Hide location/date on mobile */
