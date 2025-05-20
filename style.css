@@ -399,7 +399,7 @@ footer {
 /* Style for the project title link on Web View */
 .resume-section h3 a {
     color: inherit; /* Inherit color from h3 */
-    text-decoration: none; /* Remove underline */
+    text-decoration: underline; /* Remove underline */
 }
 
 .pdf-viewer-mobile {
