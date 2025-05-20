@@ -296,7 +296,7 @@ footer {
     }
 
     .pdf-container {
-        display: none; /* Hide web viewer on mobile */
+        display: none !important; /* Hide web viewer on mobile - Added !important */
     }
 
     .pdf-viewer-mobile {
