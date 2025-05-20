@@ -295,7 +295,7 @@ footer {
         display: none !important;
     }
 
-    .pdf-viewer-web {
+    .pdf-container {
         display: none; /* Hide web viewer on mobile */
     }
 
@@ -305,6 +305,12 @@ footer {
 
     /* Style for PDF link in mobile view */
     .pdf-viewer-mobile a {
+        color: inherit; /* Match parent text color (adapts to dark mode) */
+        text-decoration: underline;
+    }
+
+    /* Style for the project title link on mobile */
+    .resume-section h3 a {
         color: inherit; /* Match parent text color (adapts to dark mode) */
         text-decoration: underline;
     }
@@ -384,26 +390,20 @@ footer {
     display: inline;
 }
 
-/* PDF Viewer Styles */
-.pdf-viewer-web {
+/* PDF Viewer Styles (Web View) */
+.pdf-container {
     display: block; /* Show by default (web view) */
+    margin-top: 1rem; /* Add some space above the viewer */
+}
+
+/* Style for the project title link on Web View */
+.resume-section h3 a {
+    color: inherit; /* Inherit color from h3 */
+    text-decoration: none; /* Remove underline */
 }
 
 .pdf-viewer-mobile {
     display: none; /* Hide by default (web view) */
-}
-
-/* Mobile Styles - Adjust PDF Viewer Display */
-@media (max-width: 768px) {
-    /* ... existing mobile styles ... */
-
-    .pdf-viewer-web {
-        display: none; /* Hide web viewer on mobile */
-    }
-
-    .pdf-viewer-mobile {
-        display: block; /* Show mobile link on mobile */
-    }
 }
 
 /* Dark Mode */
@@ -480,4 +480,11 @@ footer {
         opacity: 0.6;
         text-decoration: none;
     }
-} 
+
+    /* Dark mode adjustments for project title link on mobile */
+    @media (max-width: 768px) {
+        .resume-section h3 a {
+            color: inherit; /* Ensure color inherits correctly in dark mode mobile */
+        }
+    }
+}
