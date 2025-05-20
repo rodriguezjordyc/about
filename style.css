@@ -12,6 +12,13 @@ body {
     line-height: 1.6;
 }
 
+/* Prevent overscroll/bounce on mobile browsers */
+html, body {
+    overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    touch-action: pan-x pan-y;
+}
+
 /* Typography */
 h1 {
     font-size: 2.5rem;
