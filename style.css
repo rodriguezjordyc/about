@@ -280,7 +280,7 @@ footer {
         font-size: 1.2rem;
         position: relative;
         z-index: 1002;
-        text-align: center;
+        text-align: left;
         border-bottom: 1px solid rgba(0,0,0,0.1);
         text-decoration: none;
     }
