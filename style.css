@@ -265,12 +265,14 @@ footer {
 
     nav.active {
         display: block;
+        text-decoration: none;
     }
 
     nav ul {
         flex-direction: column;
         padding: 1rem 0;
         gap: 0;
+        text-decoration: none;
     }
 
     nav li {
@@ -281,10 +283,12 @@ footer {
 
     nav li:last-child {
         border-bottom: none;
+        text-decoration: none;
     }
 
     nav li:hover {
         background-color: rgba(0, 0, 0, 0.05);
+        text-decoration: none;
     }
 
     nav a {
@@ -294,6 +298,7 @@ footer {
         font-size: 1.2rem;
         position: relative;
         z-index: 1002;
+        text-decoration: none;
     }
 
     /* Hide location/date on mobile */
