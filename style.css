@@ -37,7 +37,7 @@ p {
 
 /* Layout */
 main {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 6rem auto 2rem;
     padding: 0 2rem;
 }
@@ -59,7 +59,7 @@ header {
 }
 
 .header-content {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -113,7 +113,7 @@ footer {
 }
 
 .contact-links {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
@@ -244,7 +244,7 @@ footer {
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.2);
-    z-index: 1500;
+    z-index: 1200;
 }
 
 .menu-overlay.active {
